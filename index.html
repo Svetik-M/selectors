@@ -13,6 +13,16 @@
     tr:nth-of-type(odd) td:nth-of-type(n+2){
       background-color: #eee;
     }
+    input[type="checkbox"]:checked{
+      opacity: 0;
+    }
+    input[type="checkbox"]:checked+label{
+      color: red;
+      padding-left: 16px;
+      margin: -2px 0 0 -16px;
+      background: url(2.png) no-repeat;
+      background-position: 0 1px;
+    }
    </style>
  </head>
  <body>
