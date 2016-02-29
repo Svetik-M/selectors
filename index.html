@@ -6,13 +6,16 @@
     th{
       font-weight: bold;
     }
+
     td:first-child{
       background-color: red;
       color: white;
     }
+
     tr:nth-of-type(odd) td:nth-of-type(n+2){
       background-color: #eee;
     }
+
     input[type="checkbox"]:checked{
       opacity: 0;
     }
@@ -22,6 +25,19 @@
       margin: -2px 0 0 -16px;
       background: url(2.png) no-repeat;
       background-position: 0 1px;
+    }
+
+    td:nth-of-type(2n)::first-letter{
+      font-size: 2.6em;
+      font-weight: bold;
+      float: left;
+      padding-right: 3px;
+      line-height: 1em;
+    }
+    /*Для корректного отображения браузером Firefox*/
+    td:nth-of-type(2n){
+      width: 10em;
+      height: 2.5em;
     }
    </style>
  </head>
